@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blockquote {
+    display: flex;
+    flex-direction: column;
+}
+.blockquote p {
+    align-self: end;
+}
+#calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.month {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 224px;
+}
+.month-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr {
+    width: 100%;
+    border-width: 0;
+}
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.weekday {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+.day {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.day.highlight {
+    background-color: #ffeb3b;
+    cursor: pointer;
+}
+.day.highlight:hover {
+    background-color: #fdd835;
+}
