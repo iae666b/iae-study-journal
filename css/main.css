@@ -2,18 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.blockquote {
-    display: flex;
-    flex-direction: column;
-}
-.blockquote p {
-    align-self: end;
-}
+
+/* main start */
 #calendar-body {
     display: flex;
     flex-wrap: wrap;
@@ -67,3 +57,20 @@ hr {
 .day.highlight:hover {
     background-color: #fdd835;
 }
+/* main end */
+
+
+/* footer start */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blockquote {
+    display: flex;
+    flex-direction: column;
+}
+.blockquote p {
+    align-self: end;
+}
+/* footer end */
