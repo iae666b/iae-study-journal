@@ -1,5 +1,7 @@
 // without maven
 const highlightDatesWithoutMaven = [20231228, 20240104, 20240106, 20240111, 20240125, 20240126, 20240129, 20240130, 20240131, 20240221, 20240222, 20240223, 20240228, 20240303, 20240306, 20240308, 20240310, 20240313, 20240315, 20240317, 20240321, 20240322, 20240324, 20240420, 20240424, 20240426, 20240508, 20240510, 20240512, 20240515, 20240519, 20240522, 20240524, 20240525, 20240529, 20240531, 20240602, 20240605, 20240607, 20240729, 20240730, 20240801, 20240802];
+// web1
+const highlightDatesWeb1 = [20240329, 20240331, 20240410, 20240412, 20240414, 20240417, 20240419];
 // with 'note' dir or not
 const specialDate = '20240420';
 
@@ -65,6 +67,12 @@ function createCalendarByYearAndMonths(year, month_start) {
                     let urlSuffix = currentDate.toString() >= specialDate ? '/note' : '';
                     const url = `https://gitee.com/iae23a12/iae-se-maven/tree/main/src/main/java/day${currentDate.toString().slice(2) + urlSuffix}`;
                     window.open(url, '_blank');
+                });
+            }
+            if (highlightDatesWeb1.includes(currentDate)) {
+                dayElement.classList.add('highlight_web1');
+                dayElement.addEventListener('click', () => {
+                    alert("待补充 - Web 1.0 阶段 (html + css +js)")
                 });
             }
 
