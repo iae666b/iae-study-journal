@@ -72,7 +72,8 @@ function createCalendarByYearAndMonths(year, month_start) {
             if (highlightDatesWeb1.includes(currentDate)) {
                 dayElement.classList.add('highlight_web1');
                 dayElement.addEventListener('click', () => {
-                    alert("待补充 - Web 1.0 阶段 (html + css +js)")
+                    const url = `https://gitee.com/iae23a12/iae-web1/tree/main/day${currentDate.toString().slice(2) + '/note'}`;
+                    window.open(url, '_blank');
                 });
             }
 

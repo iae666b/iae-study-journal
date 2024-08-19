@@ -58,11 +58,11 @@ hr {
     background-color: #fdd835;
 }
 .day.highlight_web1 {
-    background-color: gray;
+    background-color: darkseagreen;
     cursor: pointer;
 }
 .day.highlight_web1:hover {
-    background-color: dimgray;
+    background-color: seagreen;
 }
 /* main end */
 
