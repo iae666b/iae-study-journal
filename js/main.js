@@ -76,6 +76,13 @@ function createCalendarByYearAndMonths(year, month_start) {
                     window.open(url, '_blank');
                 });
             }
+            if (highlightDatesWeb2.includes(currentDate)) {
+                dayElement.classList.add('highlight_web2');
+                dayElement.addEventListener('click', () => {
+                    const url = `https://gitee.com/iae23a12/iae-web2-myserver/tree/main/day${currentDate.toString().slice(2) + '/note'}`;
+                    window.open(url, '_blank');
+                });
+            }
 
             daysElement.appendChild(dayElement);
         }

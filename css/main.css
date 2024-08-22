@@ -64,6 +64,13 @@ hr {
 .day.highlight_web1:hover {
     background-color: seagreen;
 }
+.day.highlight_web2 {
+    background-color: seagreen;
+    cursor: pointer;
+}
+.day.highlight_web2:hover {
+    background-color: darkseagreen;
+}
 /* main end */
 
 
