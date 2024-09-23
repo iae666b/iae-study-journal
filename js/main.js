@@ -90,6 +90,13 @@ function createCalendarByYearAndMonths(year, month_start) {
                     window.open(url, '_blank');
                 });
             }
+            if (highlightHtmlNote.includes(currentDate)) {
+                dayElement.classList.add('highlight_web2');
+                dayElement.addEventListener('click', () => {
+                    const url = `https://iae666b.github.io/iae-study-journal/day${currentDate.toString().slice(2) + '/note'}`;
+                    window.open(url, '_blank');
+                });
+            }
 
             daysElement.appendChild(dayElement);
         }

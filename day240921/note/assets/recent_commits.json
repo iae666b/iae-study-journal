@@ -1,0 +1,255 @@
+[
+  {
+    "hash": "abcdefghw",
+    "date": "2024-09-21 17:08:18",
+    "message": "课后作业：增删改查练习",
+    "image": "assets/img/hw.png"
+  },
+  {
+    "hash": "abcdefgserver",
+    "date": "2024-09-21 16:28:18",
+    "message": "服务器：更新 JDK 版本、安装 MySQL 服务器",
+    "description": "让本地和远程服务器的环境保持一致，方便部署到服务器，对外开放",
+    "image": "assets/img/server.png"
+  },
+  {
+    "hash": "213a7fe03b488fd8de7b05cbfd95d8422ed80e04",
+    "date": "2024-09-21 16:27:19",
+    "message": "增加几个 jsp 例子代码。理解它的本质，学会直接看自动生成的 ***_jsp.java 代码",
+    "image": "assets/img/213a7fe0.png"
+  },
+  {
+    "hash": "a46d0427968453bd26faaf964afe7dd4b8cdadf4",
+    "date": "2024-09-21 15:21:44",
+    "message": "在 jsp 中方便的插入 Java 代码",
+    "image": "assets/img/a46d0427.png"
+  },
+  {
+    "hash": "3e08b319407c62587225f67526509587e8761713",
+    "date": "2024-09-21 15:10:50",
+    "message": "登录成功之后原来跳转到 DashboardServlet，现在改成跳转到 dashboard.jsp",
+    "image": "assets/img/3e08b319.png"
+  },
+  {
+    "hash": "b77ebb31172f871c5c171006e88a49658faf85df",
+    "date": "2024-09-21 14:54:36",
+    "message": "jsp: welcome.jsp - 探索 jsp 的本质 ...",
+    "description": "- jsp 的本质是 Servlet\n- ***.jsp 会被自动翻译成 Java 代码 ***_jsp.java",
+    "image": "assets/img/b77ebb31.png"
+  },
+  {
+    "hash": "fac4ad95cf42f1f4082ce3853192cecdf95f1fbc",
+    "date": "2024-09-21 14:37:37",
+    "message": "todo-4: 完善 WelcomeServlet 代码",
+    "image": "assets/img/fac4ad95.png"
+  },
+  {
+    "hash": "4fafe5e38b13fded07d9e9558f7e67b285e19201",
+    "date": "2024-09-21 14:33:13",
+    "message": "todo-4: 新建 WelcomeServlet 并通过 ***.write(...) 的方式输出 welcome.html 的内容 ...",
+    "description": "- 不要用 \"\"\" ... \"\"\" 文本块的新语法\n- 要感受「麻烦」\n- 我们会觉得麻烦，其他人也一样\n- 进一步如何「解决麻烦」",
+    "image": "assets/img/4fafe5e3.png"
+  },
+  {
+    "hash": "ef2b3057a6fb0c03c457acbc533eda10e30e2cf5",
+    "date": "2024-09-21 14:31:12",
+    "message": "新建 welcome.html",
+    "image": "assets/img/ef2b3057.png"
+  },
+  {
+    "hash": "59c35863e927853ff8bc2b252b2f3ced2c0aadc1",
+    "date": "2024-09-21 14:57:31",
+    "message": "把 maven.compiler.target 改回 17",
+    "image": "assets/img/59c35863.png"
+  },
+  {
+    "hash": "aeee43d1e04d28e74631c15467c3cef50cfe4c3f",
+    "date": "2024-09-20 22:05:55",
+    "message": "todo-3: 把 maven.compiler.target 改回 11 (error) - 兼容旧版本的写法",
+    "image": "assets/img/aeee43d1.png"
+  },
+  {
+    "hash": "fa146321be65035690339bd0a8eb87bb6ddacbc0",
+    "date": "2024-09-20 22:04:24",
+    "message": "观察地址栏差异",
+    "image": "assets/img/fa146321.png"
+  },
+  {
+    "hash": "900afb586dee61a9a6636e626fef5a7756df397e",
+    "date": "2024-09-20 22:03:17",
+    "message": "todo-2: 解法之一或者说是todo-1的解法二...",
+    "description": "request.getRequestDispatcher(\"...\").forward(req, resp);",
+    "image": "assets/img/900afb58.png"
+  },
+  {
+    "hash": "898994dd174fb956571a69bd9bb0388c2b0f4f9c",
+    "date": "2024-09-20 21:57:59",
+    "message": "todo-2: email 直接附带在浏览器地址栏，不安全。如何改进？回顾之前学过知识"
+  },
+  {
+    "hash": "4a8ac8bec93649ff42dcd478987998baaacb3b2a",
+    "date": "2024-09-20 21:54:24",
+    "message": "todo-1: 解法之一 - 传参 + 取参",
+    "image": "assets/img/4a8ac8be.png"
+  },
+  {
+    "hash": "d2d91ae4dcc6dbda7ecc80333a388449f3026ac1",
+    "date": "2024-09-20 21:50:23",
+    "message": "todo-1: 解法之一 - 需要动态内容 - dynamic content - 可以交给 Servlet ...",
+    "description": "- 直接跳转到 html 页面，改成跳转到 Servlet\n- 注意：JDK 15 及以上才支持文本块",
+    "image": "assets/img/d2d91ae4.png"
+  },
+  {
+    "hash": "10b7da9e5205d6e86b5f057c3c479e121d30e7dc",
+    "date": "2024-09-20 21:30:17",
+    "message": "todo-1: 如何在个人主页显示登录成功之后的邮箱地址？",
+    "image": "assets/img/10b7da9e.png"
+  },
+  {
+    "hash": "cf6b15ac0451ffc995bb46f4a3e74a816897c7e8",
+    "date": "2024-09-20 21:27:56",
+    "message": "HW: response.sendRedirect(...)",
+    "image": "assets/img/cf6b15ac.png"
+  },
+  {
+    "hash": "1aa5671346ea97a5ca564fd2d3e258aa47635b28",
+    "date": "2024-09-20 21:27:37",
+    "message": "HW: 增加登录成功之后的个人主页 - Dashboard",
+    "image": "assets/img/1aa56713.png"
+  },
+  {
+    "hash": "c2936a8144c7973cfc9d5a26004e10915e8eb3b4",
+    "date": "2024-09-20 21:20:31",
+    "message": "调用 request 的 getContextPath() 方法获取 context 路径",
+    "image": "assets/img/c2936a81.png"
+  },
+  {
+    "hash": "d5b1454071936a9321338f40b1c46d6b9ac8e1cb",
+    "date": "2024-09-20 21:16:00",
+    "message": "HW: 登录页面 - 参考之前的代码完善登录逻辑 ...",
+    "description": "- 新建数据库、用户表\n- 插入基础数据\n- MyDBUtil + mysql 依赖",
+    "image": "assets/img/d5b14540.png"
+  },
+  {
+    "hash": "b5bbe6a97826ae5c76d063acc37e1e8b62ff1770",
+    "date": "2024-09-20 20:50:42",
+    "message": "HW: 登录页面 - input 增加 required 属性",
+    "image": "assets/img/b5bbe6a9.png"
+  },
+  {
+    "hash": "2706a23ed1b0aec5ef3e9504a8c9b13c2a0d8714",
+    "date": "2024-09-20 20:46:26",
+    "message": "HW: 登录页面 - input 增加 name 属性",
+    "image": "assets/img/2706a23e.png"
+  },
+  {
+    "hash": "375326a321dc27ff051f10269c4aeb74d87156a5",
+    "date": "2024-09-20 20:45:55",
+    "message": "HW: 登录页面 - form 增加 method 和 action 属性，同时增加 LoginServlet (null)",
+    "image": "assets/img/375326a3.png"
+  },
+  {
+    "hash": "53ad5122aff892ac841ab831644329ace51c203d",
+    "date": "2024-09-20 20:38:30",
+    "message": "HW: 按照作业要求 - 完善登录页面 - 先直接用别人写好的 ...",
+    "description": "https://getbootstrap.com/docs/5.3/forms/overview/",
+    "image": "assets/img/53ad5122.png"
+  },
+  {
+    "hash": "a390aa359f3fd7266986fc3d8d0d7d8b397668b7",
+    "date": "2024-09-20 20:36:06",
+    "message": "HW: 按照作业要求 - 增加登录页面 (轮廓)",
+    "image": "assets/img/a390aa35.png"
+  },
+  {
+    "hash": "90bd10490bd2be8c65f299c496b58623b4530fbd",
+    "date": "2024-09-20 20:24:38",
+    "message": "StandardCharsets.UTF_8",
+    "image": "assets/img/90bd1049.png"
+  },
+  {
+    "hash": "c65e704e8df3aa3f5fc0530d09c57df6ab81b296",
+    "date": "2024-09-20 20:16:15",
+    "message": "HW: 简历页面 - 简历下载 - 解决中文文件名的问题 ...",
+    "description": "- 看控制台报错信息\n- 外部官方资源 https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Disposition",
+    "image": "assets/img/c65e704e.png"
+  },
+  {
+    "hash": "fedf8e9c52a23b87cebd26615105e1c06056467f",
+    "date": "2024-09-20 19:56:04",
+    "message": "HW: 简历页面 - 简历下载 - 改成下载 PDF 文件",
+    "image": "assets/img/fedf8e9c.png"
+  },
+  {
+    "hash": "db8ee2d8284c1500be2ffe22a06acdc76082a58d",
+    "date": "2024-09-20 19:51:48",
+    "message": "HW: 简历页面 - 简历下载 - 复习图片下载",
+    "image": "assets/img/db8ee2d8.png"
+  },
+  {
+    "hash": "d15153625ccd0e12dda84cfe1b5010a765496aca",
+    "date": "2024-09-20 19:14:23",
+    "message": "HW: 简历页面 - 增加真正处理简历下载的 Servlet (轮廓)",
+    "image": "assets/img/d1515362.png"
+  },
+  {
+    "hash": "3b0d061bc66a8e6dc77c9b368bc8ddca176bda7b",
+    "date": "2024-09-20 19:10:10",
+    "message": "HW: 简历页面 - 增加简历下载链接 - 先直接链接到之前写好的 Servlet",
+    "image": "assets/img/3b0d061b.png"
+  },
+  {
+    "hash": "e079ebb8b743465b1211e9cfe78f08c247c83830",
+    "date": "2024-09-20 19:26:10",
+    "message": "HW: 简历页面 - 暂时用一张图片替代文字",
+    "image": "assets/img/e079ebb8.png"
+  },
+  {
+    "hash": "9711c35de21eb6dc99c7d5730b618022e293821d",
+    "date": "2024-09-20 18:58:33",
+    "message": "HW: 简历页面 - 高亮当前菜单 - 导航菜单项跟当前页面匹配",
+    "image": "assets/img/9711c35d.png"
+  },
+  {
+    "hash": "eb3297532aa7d674e02e41458d9c8e74227c6004",
+    "date": "2024-09-20 18:56:14",
+    "message": "HW: 简历页面 - 给 main 标签增加向上的间距 mt-3",
+    "image": "assets/img/eb329753.png"
+  },
+  {
+    "hash": "afc334e128ae4b152fa1db6492aea2b810b69803",
+    "date": "2024-09-20 18:49:02",
+    "message": "HW: 简历页面 - 给 main 标签增加 container 样式",
+    "image": "assets/img/afc334e1.png"
+  },
+  {
+    "hash": "4ca6821afed7ef22cccb57d98a11042648e07b4b",
+    "date": "2024-09-20 18:47:51",
+    "message": "HW: 简历页面 - 根据语义化的标签，用 main 包裹核心内容",
+    "image": "assets/img/4ca6821a.png"
+  },
+  {
+    "hash": "e538bd75a0632057c642a8967ee3979b074e26ec",
+    "date": "2024-09-20 18:46:48",
+    "message": "HW: 简历页面 - 修改标题",
+    "image": "assets/img/e538bd75.png"
+  },
+  {
+    "hash": "b91259ecca67660b1a918f04efd59245e09daa90",
+    "date": "2024-09-20 18:46:22",
+    "message": "HW: 简历页面 - 也使用别人写好的 CSS 代码之 Bootstrap",
+    "image": "assets/img/b91259ec.png"
+  },
+  {
+    "hash": "aed99903f1a809f8e6870f7432ed017834080f08",
+    "date": "2024-09-20 18:42:17",
+    "message": "HW: 增加简历页面（轮廓）",
+    "image": "assets/img/aed99903.png"
+  },
+  {
+    "hash": "54fcfae96ef876f977b1097b46c1ec77156f54eb",
+    "date": "2024-09-20 18:38:47",
+    "message": "HW: 按照作业要求，修改主页",
+    "image": "assets/img/54fcfae9.png"
+  }
+]
