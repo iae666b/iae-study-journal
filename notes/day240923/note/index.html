@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>day240923 - note</title>
     <link rel="stylesheet" href="../../../vendor/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../vendor/driverjs/driver.css">
     <style>
         hr {
             width: 1008px;
@@ -19,7 +20,7 @@
 </header>
 
 <main class="container mt-3">
-    <h2>回顾</h2>
+    <h2 id="recap">回顾</h2>
     <p><a href="https://iae666b.github.io/iae-study-journal/notes/day240921/note/" target="_blank">见上次课的笔记 </a>（这次笔记直接用 html 来做，让学过的技术为自己服务）</p>
     <video controls width="800">
         <source src="assets/video/day240921-note.mp4" type="video/mp4">
@@ -27,7 +28,7 @@
 
     <hr>
 
-    <h2>技术演进（Java 领域 - Web2.0 - Dynamic content）</h2>
+    <h2 id="evolution">技术演进（Java 领域 - Web2.0 - Dynamic content）</h2>
     <p><img src="assets/img/tec-evolution-intro.png" alt="技术演进 - 简介" width="800"></p>
     <p>关键词：简化、优化（功能/性能上的提升）</p>
     <p>
@@ -36,7 +37,7 @@
 
     <hr>
 
-    <h2>EL (Expression Language)</h2>
+    <h2 id="el">EL (Expression Language)</h2>
     <p>Servlet + JSP 分工合作：Servlet(负责业务处理、提供数据) + JSP(专注于页面展示)</p>
     <p>
         <img src="assets/img/el.png" alt="Expression Language" width="800">
@@ -44,7 +45,7 @@
 
     <hr>
 
-    <h2>JSTL (JavaServer Pages Standard Tag Library)</h2>
+    <h2 id="jstl">JSTL (JavaServer Pages Standard Tag Library)</h2>
     <p>本质：进一步简化 JSP 写法</p>
     <ul>
         <li>减少 JSP 文件内嵌的 Java 代码</li>
@@ -57,7 +58,7 @@
 
     <hr>
 
-    <h2>会话跟踪技术</h2>
+    <h2 id="session-tracking">会话跟踪技术</h2>
     <p>由于 HTTP 协议是无状态的，不同的请求之间彼此没什么关联。有优点也有缺点：</p>
     <ul>
         <li>优点：速度快、效率高、性能好，因为没什么负担，不用记忆太多东西</li>
@@ -74,27 +75,61 @@
         <img src="assets/img/session-tracking.png" alt="会话跟踪技术" width="800">
     </p>
 
-    <h3>客户端会话跟踪技术 - Cookie</h3>
+    <h3 id="session-tracking_cookie">客户端会话跟踪技术 - Cookie</h3>
     <p>Creates a cookie, a small amount of information sent by a servlet to a Web browser, saved by the browser, and later sent back to the server. A cookie's value can uniquely identify a client, so cookies are commonly used for session management.</p>
     <p><img src="assets/img/cookie.png" alt="Cookie" width="800"></p>
     <p><img src="assets/img/add-cookie.png" alt="addCookie" width="800"></p>
     <p><img src="assets/img/get-cookies.png" alt="getCookies" width="800"></p>
     <p><img src="assets/img/cookie-timeout.png" alt="cookie timeout" width="800"></p>
 
-    <h3>服务端会话跟踪技术 - Session</h3>
+    <h3 id="session-tracking_session">服务端会话跟踪技术 - Session</h3>
     <p>Provides a way to identify a user across more than one page request or visit to a Web site and to store information about that user.</p>
     <p><img src="assets/img/session.png" alt="Session" width="1000"></p>
 
     <hr>
 
-    <h2>课后作业</h2>
-    <h3>课后作业-cookie（二选一）</h3>
+    <h2 id="hw">课后作业</h2>
+    <h3 id="hw-cookie">课后作业-cookie（二选一）</h3>
     <p><img src="assets/img/hw-cookie.png" alt="课后作业-cookie" width="1000"></p>
-    <h3>课后作业-session</h3>
+    <h3 id="hw-session">课后作业-session</h3>
     <p><img src="assets/img/hw-session.png" alt="课后作业-session" width="1000"></p>
     <br>
 </main>
 
 <script src="../../../vendor/bootstrap5/bootstrap.bundle.min.js"></script>
+<script src="../../../vendor/driverjs/driver.js.iife.js"></script>
+<script>
+    const driver = window.driver.js.driver;
+
+    const driverObj = driver({
+        showProgress: true,
+        allowClose: false,
+        steps: [
+            { element: '#recap', popover: { title: '温故而知新', description: '持续写笔记，并阶段性复习它们。', side: "left", align: 'start' }},
+            { element: '#evolution', popover: { title: '演进', description: '简化、优化、自动化......伴随着每一次技术迭代过程。', side: "bottom", align: 'start' }},
+            { element: '#el', popover: { title: '对 JSP 的简化', description: '减少 JSP 文件内嵌的 Java 代码。', side: "start", align: 'start' }},
+            { element: '#jstl', popover: { title: '进一步简化 JSP', description: '进一步减少 JSP 文件内嵌的 Java 代码，<br>使 Java 代码与 HTML 分离，<br>可以让代码慢慢往后续要介绍的 MVC (Model、View、Controller) 设计模式靠拢。', side: "bottom", align: 'start' }},
+            { element: '#session-tracking', popover: { title: '对无状态 HTTP 协议的弥补', description: '无状态的优点：速度快、效率高、性能好，因为没什么负担，不用记忆太多东西。<br>缺点交给「会话跟踪技术」来弥补', side: "bottom", align: 'start' }},
+            { element: '#session-tracking_cookie', popover: { title: 'Cookie', description: '数据存储在客户端。<br>不可控：随时可能被用户主动清除。', side: "bottom", align: 'start' }},
+            { element: '#session-tracking_session', popover: { title: 'Session', description: '数据存储在服务端。<br>可控。但，有额外的服务资源占用。', side: "bottom", align: 'start' }},
+            { element: '#hw', popover: { title: '做中学', description: '重点训练：cookie 和 session', side: "bottom", align: 'start' }},
+            { element: '#hw-cookie', popover: { title: '指定用 cookie 技术解决', description: '参考课上的代码，完成相应功能', side: "bottom", align: 'start' }},
+            { element: '#hw-session', popover: { title: '指定用 session 技术解决', description: '参考课上的代码，完成相应功能', side: "bottom", align: 'start' }},
+            { popover: { title: 'Happy Coding', description: '“课上知识”有落下的，及时去补；<br>“个人网站”有落下的，也及时去补。<br>因为后续每周都会有新功能要整合到自己的网站，平时在其他网站看到的功能慢慢也能自己实现了。' } }
+        ],
+        // onDestroyStarted is called when the user tries to exit the tour
+        onDestroyStarted: () => {
+            if (!driverObj.hasNextStep() || confirm("Are you sure?")) {
+                driverObj.destroy();
+            }
+        },
+        // onDestroyed is called after the driver is destroyed.
+        onDestroyed: () => {
+            console.log("driverObj destroyed!");
+        },
+    });
+
+    driverObj.drive();
+</script>
 </body>
 </html>
