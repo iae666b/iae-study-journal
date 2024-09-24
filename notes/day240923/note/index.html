@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>day240923 - note</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <style>
+        hr {
+            width: 1008px;
+            border-style: dashed;
+            margin: 32px 0;
+        }
+    </style>
+</head>
+<body>
+<header class="bg-light d-flex justify-content-center p-3">
+    <h1 class="h4">day240923</h1>
+</header>
+
+<main class="container mt-3">
+    <h2>回顾</h2>
+    <p><a href=""target="_blank">见上次课的笔记 </a>（这次笔记直接用 html 来做，让学过的技术为自己服务）</p>
+    <video controls width="800">
+        <source src="assets/video/day240921-note.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <h2>技术演进（Java 领域 - Web2.0 - Dynamic content）</h2>
+    <p><img src="assets/img/tec-evolution-intro.png" alt="技术演进 - 简介" width="800"></p>
+    <p>关键词：简化、优化（功能/性能上的提升）</p>
+    <p>
+        <img src="assets/img/tech-evolution.png" alt="技术演进" width="800">
+    </p>
+
+    <hr>
+
+    <h2>EL (Expression Language)</h2>
+    <p>Servlet + JSP 分工合作：Servlet(负责业务处理、提供数据) + JSP(专注于页面展示)</p>
+    <p>
+        <img src="assets/img/el.png" alt="Expression Language" width="800">
+    </p>
+
+    <hr>
+
+    <h2>JSTL (JavaServer Pages Standard Tag Library)</h2>
+    <p>本质：进一步简化 JSP 写法</p>
+    <ul>
+        <li>减少 JSP 文件内嵌的 Java 代码</li>
+        <li>使 Java 代码与 HTML 分离</li>
+        <li>可以让代码慢慢往后续要介绍的 MVC 设计模式靠拢：Model、View、Controller 三者分工协作、各司其职</li>
+    </ul>
+    <p>
+        <img src="assets/img/jstl.png" alt="JSP Standard Tag Library" width="800">
+    </p>
+
+    <hr>
+
+    <h2>会话跟踪技术</h2>
+    <p>由于 HTTP 协议是无状态的，不同的请求之间彼此没什么关联。有优点也有缺点：</p>
+    <ul>
+        <li>优点：速度快、效率高、性能好，因为没什么负担，不用记忆太多东西</li>
+        <li>
+            缺点：有时候我们就是需要识别多个请求是不是来自同一个用户，不管他是今天访问，还是过了很多天再访问，特别是在用户未登录的情况下，比如：
+            <ul>
+                <li>购物车。有时候我们访问这个页面添加了一个商品，去另一个页面又添加了一个商品...特别是未登录的情况下，如何记住之前加过的商品、加了多少商品...</li>
+                <li>需要识别用户的其他场景，如：记住用户勾选的配置、识别用户是否第一次访问网站、这个用户是不是投票多次，等等...需要记录一些状态</li>
+            </ul>
+        </li>
+    </ul>
+    <p>「会话跟踪技术」就是对上述缺点的弥补</p>
+    <p>
+        <img src="assets/img/session-tracking.png" alt="会话跟踪技术" width="800">
+    </p>
+
+    <h3>客户端会话跟踪技术 - Cookie</h3>
+    <p>Creates a cookie, a small amount of information sent by a servlet to a Web browser, saved by the browser, and later sent back to the server. A cookie's value can uniquely identify a client, so cookies are commonly used for session management.</p>
+    <p><img src="assets/img/cookie.png" alt="Cookie" width="800"></p>
+    <p><img src="assets/img/add-cookie.png" alt="addCookie" width="800"></p>
+    <p><img src="assets/img/get-cookies.png" alt="getCookies" width="800"></p>
+    <p><img src="assets/img/cookie-timeout.png" alt="cookie timeout" width="800"></p>
+
+    <h3>服务端会话跟踪技术 - Session</h3>
+    <p>Provides a way to identify a user across more than one page request or visit to a Web site and to store information about that user.</p>
+    <p><img src="assets/img/session.png" alt="Session" width="1000"></p>
+
+    <hr>
+
+    <h2>课后作业</h2>
+    <h3>课后作业-cookie（二选一）</h3>
+    <p><img src="assets/img/hw-cookie.png" alt="课后作业-cookie" width="1000"></p>
+    <h3>课后作业-session</h3>
+    <p><img src="assets/img/hw-session.png" alt="课后作业-session" width="1000"></p>
+    <br>
+</main>
+
+<script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
