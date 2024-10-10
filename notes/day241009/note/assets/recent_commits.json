@@ -1,82 +1,137 @@
 [
   {
+    "hash": "hw",
+    "date": "2024-10-09 21:25:18",
+    "message": "课后作业",
+    "image": "hw.png"
+  },
+  {
     "hash": "32695422df95f9022f28dddc1591bddaebb9811a",
     "date": "2024-10-09 18:24:34",
-    "message": "users: 分页 - 验证用户输入的当前页码和每页显示条数"
+    "message": "users: 分页 - 验证用户输入的当前页码和每页显示条数",
+    "image": [
+      "32695422.png"
+    ]
   },
   {
     "hash": "b5c891ec352666003eb375b67c68d59df3aa92a2",
     "date": "2024-10-09 18:19:21",
     "message": "users: 分页 - 动态设置上一页/下一页 ...",
-    "description": "待完善：\n- 永远不要相信用户的输入\n- 验证用户输入"
+    "description": "待完善：\n- 永远不要相信用户的输入\n- 验证用户输入",
+    "image": [
+      "b5c891ec.png"
+    ]
   },
   {
     "hash": "7b648539f9376168db07b01cac3ad56d9a6b11fc",
     "date": "2024-10-09 11:48:54",
     "message": "users: 分页 - 整合页面 ...",
-    "description": "https://getbootstrap.com/docs/5.3/components/pagination/#disabled-and-active-states"
+    "description": "https://getbootstrap.com/docs/5.3/components/pagination/#disabled-and-active-states",
+    "image": [
+      "7b648539.png"
+    ]
   },
   {
     "hash": "fc7be5372684028b0e167909006e0f0d3accb278",
     "date": "2024-10-09 11:22:48",
-    "message": "users: 分页 - 自动计算并支持用户传参"
+    "message": "users: 分页 - 自动计算并支持用户传参",
+    "image": [
+      "fc7be537.png"
+    ]
   },
   {
     "hash": "8c00b82385b9fbe43a652537d2551428d16065ab",
     "date": "2024-10-08 15:49:51",
-    "message": "users: 分页 - 挖掘 offset 和 row_count 之间的关系"
+    "message": "users: 分页 - 挖掘 offset 和 row_count 之间的关系",
+    "image": [
+      "8c00b823.png"
+    ]
   },
   {
     "hash": "8ce53e91a226c2538aa0e6a0eaec293cf3a63d79",
     "date": "2024-10-08 15:40:55",
-    "message": "users: 分页 - 第3页"
+    "message": "users: 分页 - 第3页",
+    "image": [
+      "8ce53e91.png"
+    ]
   },
   {
     "hash": "84b85bb099a51e871b00f9750d9f2265b56432d6",
     "date": "2024-10-08 15:35:38",
-    "message": "users: 分页 - 第2页"
+    "message": "users: 分页 - 第2页",
+    "image": [
+      "84b85bb0.png"
+    ]
   },
   {
     "hash": "f98e97e8a03468ff1cc0f201f0252d9b2156aaed",
     "date": "2024-10-08 15:33:35",
-    "message": "users: 分页 - LIMIT {[offset,] row_count | row_count OFFSET offset}"
+    "message": "users: 分页 - LIMIT {[offset,] row_count | row_count OFFSET offset}",
+    "image": [
+      "f98e97e8.png"
+    ]
   },
   {
     "hash": "8ebeb1da73f46463a8b1a08198e3d936916399eb",
     "date": "2024-10-08 15:18:34",
-    "message": "users: 增加测试数据 user_data.sql"
+    "message": "users: 增加测试数据 user_data.sql",
+    "image": [
+      "8ebeb1da.png"
+    ]
   },
   {
     "hash": "b63d600d0019e00574efafa9aa5008e6f580ef6e",
     "date": "2024-10-08 15:10:59",
     "message": "users: select + el for-each ...",
-    "description": "- db\n- pojo"
+    "description": "- db\n- pojo",
+    "image": [
+      "b63d600d.png"
+    ]
   },
   {
     "hash": "079a094cc51ffeaabbecf0398df498395556b265",
     "date": "2024-10-08 11:36:12",
     "message": "导航高亮统一处理。额外涉及的知识点 ...",
-    "description": "request.getAttribute(\"jakarta.servlet.forward.servlet_path\")\n\nhttps://jakarta.ee/specifications/servlet/6.0/jakarta-servlet-spec-6.0#forwarded-request-parameters"
+    "description": "- 如果在 Servlet 进行了内部转发，涉及到一些额外的知识点，见配图\n\nrequest.getAttribute(\"jakarta.servlet.forward.servlet_path\")\n\nhttps://jakarta.ee/specifications/servlet/6.0/jakarta-servlet-spec-6.0#forwarded-request-parameters",
+    "image": [
+      "079a094c-1.png",
+      "079a094c-2.png",
+      "079a094c-3.png",
+      "079a094c-4.png",
+      "079a094c-5.png"
+    ]
   },
   {
     "hash": "471ef570d8e5daa8102323747e5682c291cf9b61",
     "date": "2024-10-08 10:28:52",
-    "message": "AuthFilter 增加保护「用户管理」页面"
+    "message": "AuthFilter 增加保护「用户管理」页面",
+    "image": [
+      "471ef570.png"
+    ]
   },
   {
     "hash": "b5ebdf1dfd769855aee0a8bf42e07724d72a92ec",
     "date": "2024-10-08 10:27:53",
-    "message": "登录成功之后在导航栏显示「用户管理」页面"
+    "message": "登录成功之后在导航栏显示「用户管理」页面",
+    "image": [
+      "b5ebdf1d.png"
+    ]
   },
   {
     "hash": "46bcac2a161f6f470b3ca2b43d44687ed7a2bfc1",
     "date": "2024-09-30 12:21:04",
-    "message": "filter: 在 Filter 中统一进行登录判断，消除重复代码"
+    "message": "filter: 在 Filter 中统一进行登录判断，消除重复代码",
+    "image": [
+      "46bcac2a.png"
+    ]
   },
   {
     "hash": "4b7f0af67a2d0afbfd48e435976055155e3c0eca",
     "date": "2024-09-30 12:15:03",
-    "message": "filter: 一个 Filter 可以应用到多个 Servlet"
+    "message": "filter: 一个 Filter 可以应用到多个 Servlet",
+    "image": [
+      "4b7f0af6.png"
+    ]
   },
   {
     "hash": "126c3fd967017a40f50ad9b0af5d58bd13c71700",
@@ -93,5 +148,36 @@
     "date": "2024-09-30 12:07:55",
     "message": "filter: AuthFilter demo - to resource ...",
     "description": "- read comment\n- @WebFilter(\"...\") - servletNames or servlet urlPatterns"
+  },
+  {
+    "hash": "first_filter_demo",
+    "date": "2024-09-30 11:28:55",
+    "message": "第一个 Filter 例子",
+    "description": "备注：课上现场写的代码，写完之后删除了，可以看后面3个 commit，拆的更细",
+    "image": [
+      "first_filter_demo-1.png",
+      "first_filter_demo-2.png"
+    ]
+  },
+  {
+    "hash": "what_is_filter",
+    "date": "2024-09-30 11:18:55",
+    "message": "Filter 是什么？(一手资源)",
+    "description": "- 备注：非 commit，额外补充的内容\n- 锻炼大家解决未知问题的能力\n- 复习找一手资源的方法",
+    "image": [
+      "what_is_filter-1.png",
+      "what_is_filter-2.png",
+      "what_is_filter-3.png"
+    ]
+  },
+  {
+    "hash": "before_filter",
+    "date": "2024-09-30 11:07:55",
+    "message": "快速复习、类比生活并引出今天的新知识点：Filter",
+    "description": "备注：非 commit，额外补充的内容",
+    "image": [
+      "before_filter-1.png",
+      "before_filter-2.png"
+    ]
   }
 ]

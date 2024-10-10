@@ -41,6 +41,20 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +85,14 @@
                 const block = document.createElement('div');
                 block.className = 'cd-timeline__block';
 
+                let imagesHtml = '<div class="image-gallery">';
+                if (Array.isArray(commit.image)) {
+                    imagesHtml += commit.image.map(img => `<img src="assets/img/${img}" alt="commit image" class="commit-image">`).join('');
+                } else if (commit.image) {
+                    imagesHtml += `<img src="assets/img/${commit.image}" alt="commit image" class="commit-image">`;
+                }
+                imagesHtml += '</div>';
+
                 block.innerHTML = `
             <div class="cd-timeline__img cd-timeline__img--picture">
               <img src="../../common/img/c-circle-fill.svg" alt="Picture">
@@ -80,8 +102,8 @@
               <p class="color-contrast-medium commit-description">${commit.description || ''}</p>
               <div class="flex justify-between items-center">
                 <span class="cd-timeline__date">${new Date(commit.date).toLocaleDateString()}</span>
-                ${commit.image ? `<img src="${commit.image}" alt="commit image" class="commit-image">` : ''}
               </div>
+              ${imagesHtml}
             </div>
           `;
 
