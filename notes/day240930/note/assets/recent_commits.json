@@ -1,0 +1,117 @@
+[
+  {
+    "hash": "hw-240930",
+    "date": "2024-09-30 17:08:18",
+    "message": "课后作业：xxx"
+  },
+  {
+    "hash": "3859713e682f64fb03b6b27e8227497f65895c1f",
+    "date": "2024-09-30 11:57:57",
+    "message": "logout ...",
+    "description": "- 记得 pom.xml 增加依赖\n- 介绍新的 jstl 语法：choose-when"
+  },
+  {
+    "hash": "9324f938f775a3629089feb2876f4bb56d65bc5e",
+    "date": "2024-09-26 23:11:53",
+    "message": "根据课后作业，增加一个受保护的页面，参考 dashboard 页面的保护逻辑"
+  },
+  {
+    "hash": "de0c66519aa09a45d7357cbfef12b3293b857ff5",
+    "date": "2024-09-26 22:42:40",
+    "message": "session 超时时间改回 Tomcat 默认配置的值 30 分钟"
+  },
+  {
+    "hash": "d47bc3e47589925bdb5df1bcd15e494e09cbc217",
+    "date": "2024-09-26 22:41:46",
+    "message": "方便测试 session 超时时间：覆盖 Tomcat 默认配置的值 ...",
+    "description": "Tomcat 默认的 session 超实时间是 30 分钟，覆盖它的值，当前 webapp 覆盖成 1 分钟\n\n测试时候的注意点：是指超过 1 分钟都没访问页面，如果 1 分钟之内有访问过，最后一次访问时间之后的 1 分钟之后才会销毁"
+  },
+  {
+    "hash": "9e6de97a5472fbcc0625260e199caaf22420941b",
+    "date": "2024-09-26 22:26:45",
+    "message": "由于现在是登录成功之后才能访问 dashboard 页面，因此可以直接从 session 获取原来通过问号传递参数的内容 ...",
+    "description": "session 中的 loginUser 属性正好保存的是 dashboard 页面要用到的 email\n\nloginUser 要存什么值，可以自己指定，甚至都可以存整个 User 对象"
+  },
+  {
+    "hash": "941d7102e0ab3741b005e4dddc19a58d3d7efa0e",
+    "date": "2024-09-26 22:22:15",
+    "message": "通过 session 判断用户是否登录 ...",
+    "description": "如果未登录，而访问 dashboard 页面，直接跳到 ForbiddenServlet"
+  },
+  {
+    "hash": "6e11905d53271abbfd9087fae1f62669df0d70c1",
+    "date": "2024-09-26 21:48:31",
+    "message": "公共的头部模板也应该有不同的标题 ...",
+    "description": "_start.jsp 不同页面显示不同标题，由各自的 Servlet 提供具体的内容"
+  },
+  {
+    "hash": "580a3f22bd20be897fd18ccd215ffab8921a7e23",
+    "date": "2024-09-26 21:32:25",
+    "message": "引出 <%@ include file=\"...\" %> ...",
+    "description": "- 抽取重复的部分\n- 避免重复修改\n- 这种思想无处不在，变量、方法也类似"
+  },
+  {
+    "hash": "263710b08d53c8a6681b6bf0427cbf652339aa1e",
+    "date": "2024-09-26 18:56:13",
+    "message": "统一修改导航栏的链接。同时修改 4 个文件 ...",
+    "description": "思考：有没更好的方式"
+  },
+  {
+    "hash": "3fdb37cd1c9128bc43753185f372eafbcc63489b",
+    "date": "2024-09-26 18:50:05",
+    "message": "调整 welcome-file-list 配置的顺序，优先显示 index.jsp"
+  },
+  {
+    "hash": "348108e7916a9e2b86e73d44a97b6bd9b98def2e",
+    "date": "2024-09-26 18:47:56",
+    "message": "引出 welcome-file-list 的配置 ...",
+    "description": "查看 Tomcat 的默认值，打开 `Tomcat安装目录/conf/web.xml` 搜索 `welcome-file-list`"
+  },
+  {
+    "hash": "a5046165cb518a2993e6793378f1822b8e256f2a",
+    "date": "2024-09-26 18:45:48",
+    "message": "新增 index.jsp，内容 copy 自 index.html"
+  },
+  {
+    "hash": "439caa32320830d4e86d311a3c2af46b65f3a8cc",
+    "date": "2024-09-26 18:45:19",
+    "message": "原来的 index.jsp 改名成 intro.jsp"
+  },
+  {
+    "hash": "17fc41fe54de1f3aaa4ee1dcde7d8cede830c11e",
+    "date": "2024-09-26 18:35:42",
+    "message": "新增 DashboardServlet，登录成功之后 resp.sendRedirect 到它"
+  },
+  {
+    "hash": "59d2f3ae734b889635cfb54f14cf91df3117bf09",
+    "date": "2024-09-26 18:23:06",
+    "message": "LoginServlet@doPost 登录成功之后改回 resp.sendRedirect 的跳转方式"
+  },
+  {
+    "hash": "4a388049298cfb801cad47427e53950a1170b592",
+    "date": "2024-09-26 18:21:56",
+    "message": "LoginServlet 增加 doGet 方法并转发到 /WEB-INF/login.jsp"
+  },
+  {
+    "hash": "6cd1bb3ab368fbbd3967b08a36d9567f123370e5",
+    "date": "2024-09-26 18:05:45",
+    "message": "新增 ResumeServlet 转发到 /WEB-INF/resume.jsp"
+  },
+  {
+    "hash": "e5d675313b2a3d4653d3377c842012a945aafdba",
+    "date": "2024-09-26 18:02:14",
+    "message": "refactor: 之前的 ResumeServlet 改成名 ResumeDownloadServlet"
+  },
+  {
+    "hash": "5b5b8dfecf9709f5fc5470ee88f083ec7715c083",
+    "date": "2024-09-26 16:29:38",
+    "message": "hw: hw-cookie-2 - 更真实的显示效果模拟",
+    "description": "重要提醒：切换到「iae-web-2」仓库查看这个 commit 代码"
+  },
+  {
+    "hash": "d46143ee446619147cc744f0d5c1378f6f4d6cea",
+    "date": "2024-09-26 16:11:13",
+    "message": "hw: hw-cookie-2",
+    "description": "重要提醒：切换到「iae-web-2」仓库查看这个 commit 代码"
+  }
+]
