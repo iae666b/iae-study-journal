@@ -1,0 +1,66 @@
+[
+  {
+    "hash": "hw",
+    "date": "2024-10-28 20:22:18",
+    "message": "课上动手 + 课后作业",
+    "description": "",
+    "image": "hw.png"
+  },
+  {
+    "hash": "blog-template",
+    "date": "2024-10-28 19:25:06",
+    "message": "大家平时可以找找漂亮的模板，应用到自己的项目中。提供一个我写",
+    "description": "",
+    "image": [
+      "template-1.png",
+      "template-2.png",
+      "template-3.png"
+    ]
+  },
+  {
+    "hash": "c6fb4b295a05a3f28fed4e23eb35ff830170fb93",
+    "date": "2024-10-28 16:42:44",
+    "message": "后台管理：优化，保存用户上传的封面图时，对它重命名，避免文件名重复 ...",
+    "description": "- 由于现在所有文件都是唯一了，增加一个功能：如果是\"更新\"封面图，补充删除硬盘上的旧封面图的功能"
+  },
+  {
+    "hash": "528298d0be773b3b70cba286c67fa216d3f36213",
+    "date": "2024-10-28 16:36:35",
+    "message": "后台管理：增加删除博客的功能 admin-blog-delete ...",
+    "description": "- 通过删除博客封面图\n- todo: 检查博客正文的所有配图，也删除？"
+  },
+  {
+    "hash": "8c1bd6289e8cf2ee5cd3594409a8138baa9948e4",
+    "date": "2024-10-28 16:29:41",
+    "message": "后台管理：修改博客时候，增加判断，有新的封面图时才更新 cover 字段"
+  },
+  {
+    "hash": "9feae60d6a0405235c4e383371e5968162953396",
+    "date": "2024-10-28 16:26:55",
+    "message": "后台管理：修改博客页面也增加封面图功能 admin-blog-edit"
+  },
+  {
+    "hash": "1e5bb5a4a35605cfdf5047ad98bb6eb1dc7845df",
+    "date": "2024-10-28 16:14:29",
+    "message": "后台管理：增加修改博客的功能 admin-blog-edit"
+  },
+  {
+    "hash": "2f88bed508ce4f3a627700189af1782fc460d5a2",
+    "date": "2024-10-28 15:43:20",
+    "message": "后台管理：admin-blog-list 页面增加“搜索”功能 - 4"
+  },
+  {
+    "hash": "d4f9b4efdc8dbd4033056af6ed6abef9abb40fea",
+    "date": "2024-10-28 15:33:08",
+    "message": "后台管理：admin-blog-list 页面增加分页功能 - 3",
+    "image": [
+      "d4f9b4ef-1.png",
+      "d4f9b4ef-2.png"
+    ]
+  },
+  {
+    "hash": "85e81af190c6e347d703f09de686962e68edf42b",
+    "date": "2024-10-28 15:19:00",
+    "message": "后台管理：完善 admin-blog-list 页面 - 2"
+  }
+]
