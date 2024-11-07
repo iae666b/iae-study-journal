@@ -8,82 +8,96 @@
   {
     "hash": "47caaf5d30278a05864d3bf73cb1078fb83fffb0",
     "date": "2024-11-06 16:54:51",
-    "message": "BookRepository 修正上一个 commit 遗留的缺陷"
+    "message": "BookRepository 修正上一个 commit 遗留的缺陷",
+    "image": "47caaf5d.png"
   },
   {
     "hash": "c57e6382902ca182d5ef894ecd87a2d93ceb09e7",
     "date": "2024-11-06 16:50:11",
     "message": "BookRepository ...",
-    "description": "- extends JpaRepository\n- 目前多次插入会报错，因为 isbn 设置成唯一"
+    "description": "- extends JpaRepository\n- 目前多次插入会报错，因为 isbn 设置成唯一",
+    "image": "c57e6382.png"
   },
   {
     "hash": "e22083a20e1825332bacc139074ca7418e8dc087",
     "date": "2024-11-06 16:41:19",
     "message": "恢复配置 ddl-auto=update ...",
-    "description": "spring.jpa.hibernate.ddl-auto=update\n后续介绍实现类似功能的其他方式"
+    "description": "spring.jpa.hibernate.ddl-auto=update\n后续介绍实现类似功能的其他方式",
+    "image": "e22083a2.png"
   },
   {
     "hash": "ec9c76c086108d2c3c80c42fd8741a4fccceb94b",
     "date": "2024-11-06 16:34:49",
     "message": "@Column(...) ...",
-    "description": "- spring.jpa.hibernate.ddl-auto=create (危险操作，方便本地测试，但是在真实环境一定一定不能用)"
+    "description": "- spring.jpa.hibernate.ddl-auto=create (危险操作，方便本地测试，但是在真实环境一定一定不能用)",
+    "image": "ec9c76c0.png"
   },
   {
     "hash": "e2bfe0637ebc99d1c412860b487ff3fdf42c8ab1",
     "date": "2024-11-06 16:32:48",
     "message": "增加 JPA 相关配置 ...",
-    "description": "- @Entity\n\n- spring.jpa.show-sql=true\n- spring.jpa.hibernate.ddl-auto=update"
+    "description": "- @Entity\n\n- spring.jpa.show-sql=true\n- spring.jpa.hibernate.ddl-auto=update",
+    "image": "e2bfe063.png"
   },
   {
     "hash": "b86c34fc50947742fb78108324cb1ab23666ce1d",
     "date": "2024-11-06 16:28:24",
     "message": "增加数据库相关配置 ...",
-    "description": "- createDatabaseIfNotExist=true"
+    "description": "- createDatabaseIfNotExist=true",
+    "image": "b86c34fc.png"
   },
   {
     "hash": "5cdb62441278a7ce89c0230fd78c8bde2c6de008",
     "date": "2024-11-06 16:18:50",
     "message": "Edit Starters ... (error)",
-    "description": "增加两个依赖，为入库做准备:\n- MySQL Driver\n- Spring Data JPA"
+    "description": "增加两个依赖，为入库做准备:\n- MySQL Driver\n- Spring Data JPA",
+    "image": "5cdb6244.png"
   },
   {
     "hash": "5fc0e24bfd29f2299896d4341241ebea17d8f2f6",
     "date": "2024-11-06 16:16:32",
     "message": "快速切换实现类 ...",
-    "description": "- 而且 BookController 类不需要任何修改\n- ... 还有很多其他的方法、细节，后续再慢慢展开"
+    "description": "- 而且 BookController 类不需要任何修改\n- ... 还有很多其他的方法、细节，后续再慢慢展开",
+    "image": "5fc0e24b.png"
   },
   {
     "hash": "720412954bcc2634f66f05ce247a536469d13a0e",
     "date": "2024-11-06 16:14:53",
     "message": "面向“抽象”编程 ...",
-    "description": "- 不需要自己 new 了\n- 增加注解（标记）@Service、@Autowired"
+    "description": "- 不需要自己 new 了\n- 增加注解（标记）@Service、@Autowired",
+    "image": "72041295.png"
   },
   {
     "hash": "03becab6dc914a1a63ff9c0f34bc4b2b1285155f",
     "date": "2024-11-06 16:10:24",
-    "message": "重构：增加 BookService 接口，制定规范"
+    "message": "重构：增加 BookService 接口，制定规范",
+    "image": "03becab6.png"
   },
   {
     "hash": "9bc3d588fc8d9f63fba153a2d611ea40e783466e",
     "date": "2024-11-06 16:04:36",
-    "message": "BookController 内容更换零件，改用 OtherIsbnBookService"
+    "message": "BookController 内容更换零件，改用 OtherIsbnBookService",
+    "image": "9bc3d588.png"
   },
   {
     "hash": "b6930c2b958536b19731f15d6c2d4bd7cd52a920",
     "date": "2024-11-06 16:02:59",
     "message": "OtherIsbnBookService ...",
-    "description": "- 新增一个 ISBN 查询服务类\n- 不同的类名、不同的方法名 otherGetBookByIsbn"
+    "description": "- 新增一个 ISBN 查询服务类\n- 不同的类名、不同的方法名 otherGetBookByIsbn",
+    "image": "b6930c2b.png"
   },
   {
     "hash": "ffad0826f25d8ace43256ee860531703a5b5694f",
     "date": "2024-11-06 15:46:54",
     "message": "重构：Controller 中不再关心具体如何获得 Book - part2 ...",
-    "description": "- 填充黑盒子"
+    "description": "- 填充黑盒子",
+    "image": "ffad0826.png"
   },
   {
     "hash": "76d36b2df52b1aed2c14e8e8a5ff7254fb69d5f6",
     "date": "2024-11-06 15:43:48",
     "message": "重构：Controller 中不再关心具体如何获得 Book - part1 ...",
-    "description": "- 黑盒子思想\n- 先确定输入，输出"
+    "description": "- 黑盒子思想\n- 先确定输入，输出",
+    "image": "76d36b2d.png"
   }
 ]
