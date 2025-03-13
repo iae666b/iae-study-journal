@@ -51,25 +51,28 @@ hr {
     cursor: default;
 }
 .day.highlight {
-    background-color: #ffeb3b;
+    background-color: darkseagreen;
     cursor: pointer;
 }
+.day.highlight.weekend {
+    background-color: #146c43;
+}
 .day.highlight:hover {
-    background-color: #fdd835;
+    color: yellow;
 }
 .day.highlight_web1 {
     background-color: darkseagreen;
     cursor: pointer;
 }
 .day.highlight_web1:hover {
-    background-color: seagreen;
+    color: yellow;
 }
 .day.highlight_web2 {
-    background-color: seagreen;
+    background-color: darkseagreen;
     cursor: pointer;
 }
 .day.highlight_web2:hover {
-    background-color: darkseagreen;
+    color: yellow;
 }
 /* main end */
 
