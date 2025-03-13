@@ -79,15 +79,23 @@ hr {
 
 /* footer start */
 footer {
+    margin: 1rem 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-.blockquote {
-    display: flex;
-    flex-direction: column;
+footer .text-block {
+    display: inline-block;
+    margin-right: 1rem;
 }
-.blockquote p {
-    align-self: end;
+footer .color-block {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+footer .color-block-night {
+    background-color: darkseagreen;
+}
+footer .color-block-day {
+    background-color: #146c43;
 }
 /* footer end */
