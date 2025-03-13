@@ -8,19 +8,20 @@ const specialDate = '20240420';
 function createCalendar() {
     createCalendarByYearAndMonths(2023, 11);
     createCalendarByYearAndMonths(2024, 0);
+    createCalendarByYearAndMonths(2025, 0, 6);
 }
 
-function createCalendarByYearAndMonths(year, month_start) {
-    const months = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'];
+function createCalendarByYearAndMonths(year, month_start, month_end = 12) {
+    const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
     const weekdays = ['一', '二', '三', '四', '五', '六', '日'];
 
-    for (let month = month_start; month < 12; month++) {
+    for (let month = month_start; month < month_end; month++) {
         const monthElement = document.createElement('div');
         monthElement.className = 'month';
 
         const monthName = document.createElement('div');
         monthName.className = 'month-name';
-        monthName.textContent = months[month];
+        monthName.textContent = year + '-' + months[month];
         monthElement.appendChild(monthName);
 
         const weekdaysElement = document.createElement('div');
