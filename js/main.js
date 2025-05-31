@@ -12,7 +12,7 @@ let totalOfAllClasses = 0;
 function createCalendar() {
     createCalendarByYearAndMonths(2023, 11);
     createCalendarByYearAndMonths(2024, 0);
-    createCalendarByYearAndMonths(2025, 0, 6);
+    createCalendarByYearAndMonths(2025, 0, 5);
 
     console.log("night = " + totalOfNightClasses + "(Count)");
     console.log("day = " + totalOfDayClasses + "(Count)");
@@ -129,10 +129,10 @@ function createCalendarByYearAndMonths(year, month_start, month_end = 12) {
 
         monthElement.appendChild(daysElement);
         document.getElementById("calendar-body").appendChild(monthElement);
-        if (month === 11) {
+        /*if (month === 11) {
             const hr = document.createElement('hr');
             monthElement.after(hr);
-        }
+        }*/
     }
 }
 
